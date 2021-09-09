@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3>Sentence: {{ data.sentence }}</h3>
+            <h3>Misspelled Words: {{ data.incorrects }}</h3>
+            <h3>Suggestions: {{ data.suggestions }}</h3>
+        </div>
+    </div>
+{% endblock %}

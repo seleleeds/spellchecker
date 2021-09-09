@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1>SpellChecker Msc Project</h1>
+            <h3>Let's get started.</h3>
+            <form action={{ url_for('checkSentence') }} method="POST">
+                <div class="form-group">
+                    <label for="sentenceArea"> Type sentence here</label>
+                    <textarea class="form-control" name="sentenceArea" id="sentenceArea" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Check Sentences</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
